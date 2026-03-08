@@ -940,6 +940,16 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to show the music ticker in the status bar.
+         * default: false
+         */
+        public static final String STATUS_BAR_SHOW_MUSIC_TICKER = "status_bar_show_music_ticker";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_SHOW_MUSIC_TICKER_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether the notification light will be allowed when in zen mode during downtime
          */
         public static final String ZEN_ALLOW_LIGHTS = "allow_lights";
@@ -2132,6 +2142,8 @@ public final class LineageSettings {
             VALIDATORS.put(SYSTEM_PROFILES_ENABLED, SYSTEM_PROFILES_ENABLED_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK, STATUS_BAR_CLOCK_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK_AUTO_HIDE, STATUS_BAR_CLOCK_AUTO_HIDE_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_SHOW_MUSIC_TICKER,
+                    STATUS_BAR_SHOW_MUSIC_TICKER_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_AM_PM, STATUS_BAR_AM_PM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
