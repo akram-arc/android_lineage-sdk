@@ -940,13 +940,13 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
-         * Whether to show the music ticker in the status bar.
+         * Whether to show the centered dynamic island in the status bar.
          * default: false
          */
-        public static final String STATUS_BAR_SHOW_MUSIC_TICKER = "status_bar_show_music_ticker";
+        public static final String STATUS_BAR_SHOW_DYNAMIC_ISLAND = "status_bar_show_dynamic_island";
 
         /** @hide */
-        public static final Validator STATUS_BAR_SHOW_MUSIC_TICKER_VALIDATOR =
+        public static final Validator STATUS_BAR_SHOW_DYNAMIC_ISLAND_VALIDATOR =
                 sBooleanValidator;
 
         /**
@@ -2152,8 +2152,8 @@ public final class LineageSettings {
             VALIDATORS.put(SYSTEM_PROFILES_ENABLED, SYSTEM_PROFILES_ENABLED_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK, STATUS_BAR_CLOCK_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK_AUTO_HIDE, STATUS_BAR_CLOCK_AUTO_HIDE_VALIDATOR);
-            VALIDATORS.put(STATUS_BAR_SHOW_MUSIC_TICKER,
-                    STATUS_BAR_SHOW_MUSIC_TICKER_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_SHOW_DYNAMIC_ISLAND,
+                    STATUS_BAR_SHOW_DYNAMIC_ISLAND_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_AM_PM, STATUS_BAR_AM_PM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
