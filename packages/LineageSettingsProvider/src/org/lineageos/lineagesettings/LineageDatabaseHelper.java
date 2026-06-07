@@ -528,6 +528,24 @@ public class LineageDatabaseHelper extends SQLiteOpenHelper{
             loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_SHOW_DYNAMIC_ISLAND,
                     R.bool.def_status_bar_show_dynamic_island);
 
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_MEDIA_CONTROLS,
+                    R.bool.def_status_bar_dynamic_island_media_controls);
+
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_SCREEN_RECORDING,
+                    R.bool.def_status_bar_dynamic_island_screen_recording);
+
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_ALARMS,
+                    R.bool.def_status_bar_dynamic_island_alarms);
+
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_FLASHLIGHT,
+                    R.bool.def_status_bar_dynamic_island_flashlight);
+
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH,
+                    R.bool.def_status_bar_dynamic_island_stopwatch);
+
+            loadBooleanSetting(stmt, LineageSettings.System.STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES,
+                    R.bool.def_status_bar_dynamic_island_live_scores);
+
             loadBooleanSetting(stmt, LineageSettings.System.HIDE_STATUS_BAR_IN_SCREENSHOT,
                     R.bool.def_hide_status_bar_in_screenshot);
 

@@ -950,6 +950,66 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to show media controls in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_MEDIA_CONTROLS = "status_bar_dynamic_island_media_controls";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_MEDIA_CONTROLS_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Whether to show screen recording status in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_SCREEN_RECORDING = "status_bar_dynamic_island_screen_recording";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_SCREEN_RECORDING_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Whether to show alarms in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_ALARMS = "status_bar_dynamic_island_alarms";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_ALARMS_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Whether to show flashlight status in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_FLASHLIGHT = "status_bar_dynamic_island_flashlight";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_FLASHLIGHT_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Whether to show stopwatch in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH = "status_bar_dynamic_island_stopwatch";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH_VALIDATOR =
+                sBooleanValidator;
+
+        /**
+         * Whether to show live scores in the dynamic island.
+         * default: true
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES = "status_bar_dynamic_island_live_scores";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether the notification light will be allowed when in zen mode during downtime
          */
         public static final String ZEN_ALLOW_LIGHTS = "allow_lights";
@@ -2154,6 +2214,18 @@ public final class LineageSettings {
             VALIDATORS.put(STATUS_BAR_CLOCK_AUTO_HIDE, STATUS_BAR_CLOCK_AUTO_HIDE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_DYNAMIC_ISLAND,
                     STATUS_BAR_SHOW_DYNAMIC_ISLAND_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_MEDIA_CONTROLS,
+                    STATUS_BAR_DYNAMIC_ISLAND_MEDIA_CONTROLS_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_SCREEN_RECORDING,
+                    STATUS_BAR_DYNAMIC_ISLAND_SCREEN_RECORDING_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_ALARMS,
+                    STATUS_BAR_DYNAMIC_ISLAND_ALARMS_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_FLASHLIGHT,
+                    STATUS_BAR_DYNAMIC_ISLAND_FLASHLIGHT_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH,
+                    STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES,
+                    STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_AM_PM, STATUS_BAR_AM_PM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
