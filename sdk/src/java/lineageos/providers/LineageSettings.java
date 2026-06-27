@@ -1010,6 +1010,16 @@ public final class LineageSettings {
                 sBooleanValidator;
 
         /**
+         * Whether to show lyrics in the dynamic island.
+         * default: false
+         */
+        public static final String STATUS_BAR_DYNAMIC_ISLAND_LYRICS = "status_bar_dynamic_island_lyrics";
+
+        /** @hide */
+        public static final Validator STATUS_BAR_DYNAMIC_ISLAND_LYRICS_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * Whether the notification light will be allowed when in zen mode during downtime
          */
         public static final String ZEN_ALLOW_LIGHTS = "allow_lights";
@@ -2226,6 +2236,8 @@ public final class LineageSettings {
                     STATUS_BAR_DYNAMIC_ISLAND_STOPWATCH_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES,
                     STATUS_BAR_DYNAMIC_ISLAND_LIVE_SCORES_VALIDATOR);
+            VALIDATORS.put(STATUS_BAR_DYNAMIC_ISLAND_LYRICS,
+                    STATUS_BAR_DYNAMIC_ISLAND_LYRICS_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_AM_PM, STATUS_BAR_AM_PM_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_BATTERY_STYLE, STATUS_BAR_BATTERY_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_SHOW_BATTERY_PERCENT,
